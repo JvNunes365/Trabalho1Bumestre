@@ -1,0 +1,19 @@
+package Trabalho;
+import java.util.Scanner;
+    
+    public class Exercicio05 
+    {
+	 public static void main (String[] args) 
+	{
+		Scanner scanner = new Scanner (System.in);
+
+		System.out.println("Digite a nota do Primeiro Bimestre: ");
+		int nota1 = scanner.nextInt();
+		System.out.println("Digite a nota do Segundo Bimestre: ");
+		int nota2 = scanner.nextInt();
+		int media = (nota1 + nota2)/2;
+		
+			System.out.println("As notas são: " + nota1 + " e " + nota2);
+			System.out.println("A média do Aluno é: " + media);
+			scanner.close();
+	}}
