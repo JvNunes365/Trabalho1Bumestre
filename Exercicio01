@@ -1,0 +1,19 @@
+package Trabalho;
+
+public class Exercicio01 {
+		public static void main(String[] args) 
+		
+		
+		{
+			String NomeCompleto = "João Vitor Nunes da Silva";
+			
+			String[] partes = NomeCompleto.split(" ");
+				String nome = partes[0];
+			System.out.println("Nome: " + nome);
+		}
+
+	
+
+
+
+}
