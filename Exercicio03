@@ -1,0 +1,20 @@
+package Trabalho;
+import java.util.Scanner;
+public class Exercicio03 {
+       public static void main (String[]args) 
+		{
+			Scanner scanner = new Scanner(System.in);
+			
+			System.out.println("Digite o nome de uma Cidade: ");
+			String cidade = scanner.nextLine();
+			
+			if (cidade.equals("Curitiba"))
+				System.out.println("O nome da Cidade está correto!");
+			else 
+				System.out.println("Cidade incorreta, digite novamente: ");
+				
+			
+			scanner.close();
+		
+	}
+}
