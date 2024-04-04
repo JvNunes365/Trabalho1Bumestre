@@ -1,18 +1,17 @@
 package Trabalho;
 
-public class Exercicio07 
-        {
-	
-		public static void main(String[]args) 
+public class Exercicio02 {
+	public static void main(String[] args) 
+		
 		
 		{
-			String teste = ("  teste     123  ");
-			System.out.println ("Imprima essa String: " + teste);
-			System.out.println("Imprima essa String sem Espaços no Inicio e Final:" + teste.trim());
-			String testeSemEspacos = teste.trim().replaceAll("\\s+", " ");
-			System.out.println("Imprima essa String sem Espaços no Inicio e Final e com apenas 1 espaço no meio:" + testeSemEspacos);
-		
+			String NomeCompleto = "João Vitor Nunes da Silva";
+			
+			String[] partes = NomeCompleto.split(" ");
+				String nome = partes[0];
+			System.out.println("Nome: " + nome.toUpperCase());
+		}
 
-	}
+	
 
 }
