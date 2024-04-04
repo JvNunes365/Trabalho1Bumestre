@@ -1,0 +1,33 @@
+package Trabalho;
+  import java.util.Scanner;
+   public class Exercicío09
+{
+   public static void main (String[] args) 
+ {
+Scanner scanner = new Scanner(System.in); 
+String[] nomesAlunos = new String [3];
+double[]  [] notasAlunos = new double [3] [2];
+
+for (int i = 0; i < 3; i++)
+{
+	System.out.println("Digite o nome do aluno" +  (i+1) + ";");
+	nomesAlunos[i] = scanner.nextLine();
+	
+	System.out.println("Digite a nota do primeiro Bimestre" + (i+1) + ";");
+	notasAlunos[i][0] = scanner.nextDouble();
+	
+	scanner.nextLine();
+}
+
+System.out.println("/Média dos Alunos");
+for (int i = 0; i <3; i++) {
+double media = (notasAlunos[i][0] + notasAlunos[i][1]);
+System.out.println(nomesAlunos [i] + ":" + media);
+}
+scanner.close();
+}
+
+
+
+
+}
