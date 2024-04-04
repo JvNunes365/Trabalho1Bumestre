@@ -1,0 +1,34 @@
+package Trabalho;
+import java.util.Scanner;
+public class Exercicio06 {
+		public static void main(String[]args)
+		{
+			Scanner scanner = new Scanner(System.in);
+			System.out.println("Digite a PRIMEIRA letra ou frase:  ");
+			String Frase1 = scanner.nextLine();
+			System.out.println("Digite a SEGUNDA letra ou frase:  ");
+			String Frase2 = scanner.nextLine();
+			System.out.println("Digite a TERCEIRA letra ou frase:  ");
+			String Frase3 = scanner.nextLine();
+			String maiorFrase = Frase1;
+			
+			if (Frase2.length() > maiorFrase.length()) 
+			{
+	            maiorFrase = Frase2;
+	        }
+
+	        if (Frase3.length() > maiorFrase.length())
+	        {
+	            maiorFrase = Frase3;
+	        }
+
+	        System.out.println("A maior frase é: " + maiorFrase);
+	        scanner.close();
+	        
+		
+		
+	}
+			
+
+
+}
